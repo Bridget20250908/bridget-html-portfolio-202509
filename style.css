@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap");
 
 :root {
-  --brand: #232124;
+  --brand: #37303a;
   --action: hsl(285, 8%, 62%);
   --white: #ffffff;
-  --base-light: #151414;
+  --base-light: #aba5a5;
   --base-dark: #0d0711;
   --black: #111111;
 }
@@ -162,6 +162,7 @@ select {
 
   /* .hero */
  .hero {
+  display:flex;
    background-color: var(--brand);
    padding: 56px 16px;
    border-radius: 10px;
@@ -171,7 +172,12 @@ select {
  .hero h1 {
    font-size: 2rem;
    margin-bottom: 24px;
-   color: var(--white);
+   color: var(--base-light);
+ }
+  .hero p {
+   font-size: 50px;
+   margin-bottom: 24px;
+   color: var(--base-light);
  }
  
  .hero .hero-accent {

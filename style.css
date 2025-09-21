@@ -117,7 +117,7 @@ header button {
      height: 100px;
    }
 
-  .desktop-nav {
+  header .mobile-header .desktop-nav {
      display: inline-block;
    }
 

@@ -8,6 +8,7 @@
   --base-light: #aba5a5;
   --base-dark: #0d0711;
   --black: #111111;
+  --crystal: #93eed1;
 }
 
 /* CSS Reset */
@@ -94,8 +95,6 @@ select {
   align-items: center;
   justify-content: space-between;
 }
-   
-
 
  header button {
    all: unset;
@@ -107,6 +106,7 @@ select {
        justify-content: space-between;
        align-items: center;
    }
+   
 
    header nav ul {
        display: flex;
@@ -129,7 +129,7 @@ select {
        height: 100px;
    }
  }
- * .mobile-nav */
+ /* .mobile-nav */
  .mobile-nav a {
    text-decoration: none;
    color: var(--black);

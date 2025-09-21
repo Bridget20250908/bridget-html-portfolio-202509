@@ -126,12 +126,13 @@ header button {
   }
 
   .hero {
+    display:flex;
     padding: 120px 56px;
   }
 
    .hero h1 {
-       font-size: 3.5rem;
-       max-width: 70%;
+     font-size: 3.5rem;
+     max-width: 70%;
    }
 
    .articles-container {
@@ -192,7 +193,6 @@ header button {
 }
 
 .hero {
-  display:flex;
   background-color: var(--brand);
   padding: 56px 16px;
   border-radius: 10px;

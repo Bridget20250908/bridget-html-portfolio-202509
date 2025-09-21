@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap");
 
 :root {
-  --brand: #8246af;
-  --action: #ffa300;
+  --brand: #232124;
+  --action: hsl(285, 8%, 62%);
   --white: #ffffff;
-  --base-light: #cdb5df;
+  --base-light: #151414;
   --base-dark: #0d0711;
   --black: #111111;
 }
@@ -16,7 +16,7 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   font-family: "Inter", sans-serif;
-  color: var(--black);
+  color: var(--crystal);
   scroll-behavior: smooth;
 }
 

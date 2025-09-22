@@ -99,69 +99,6 @@ header .mobile-header {
 header button {
    all: unset;
 }
- 
-@media (min-width: 768px) {
-
-
-   header nav ul {
-       display: flex;
-       gap: 24px;
-       margin-right: 16px;
-   }
-
-   header .mobile-header .hamburger-icon {
-       display: none;
-   }
-
-   .logo {
-     height: 100px;
-   }
-
-  header .mobile-header .desktop-nav {
-     display: inline-block;
-   }
-
-  .mobile-nav {
-    display: none;
-  }
-
-  .hero {
-    display:flex;
-    padding: 120px 56px;
-  }
-
-   .hero h1 {
-     font-size: 3.5rem;
-     max-width: 70%;
-   }
-
-   .articles-container {
-     display: flex;
-   }
-
-   article {
-      padding: 56px;
-  }
-
-  .contact-form h2 {
-      text-align: center;
-      font-size: 2.5rem;
-  }
-
-  .contact-form form {
-      max-width: 60%;
-      margin: 40px auto;
-  }
-
-  footer {
-       justify-content: center;
-   }
-
-   footer .socials-icon {
-       margin-left: 20px;
-       margin-right: 20px;
-   }
-}
 
 .logo {
    height: 50px;
@@ -194,7 +131,7 @@ header button {
 
 .hero {
   background-color: var(--brand);
-  padding: 56px 16px;
+  padding: 32px 32px;
   border-radius: 10px;
   margin: 5px 10px;
 }
@@ -215,38 +152,41 @@ header button {
     color: var(--action);
 }
 
- article {
-   padding: 32px 16px;
+.hero .desktop-hero-text{
+    display:none;
+}
+
+article {
+   padding: 16px 16px;
    background-color: var(--base-light);
    border-radius: 10px;
    margin: 5px 10px;
    transition: all 0.3s ease;
  }
 
- article:hover {
+article:hover {
    filter: contrast(150%);
- }
+}
 
-  article .article-heading {
+article .article-heading {
   display: flex;
   justify-content: flex-start;
 }
 
- article .icon {
-   height: 24px;
-   width: 24px;
+article .icon {
+   height: 96px;
    margin-left: 10px;
    margin-right: 10px;
  }
  
- article .article-heading h2 {
+article .article-heading h2 {
    margin-bottom: 16px;
    color: var(--base-dark);
  }
  
- article p {
+article p {
    margin-bottom: 16px;
- }
+}
 
  /* .contact-form */
 .contact-form {
@@ -296,4 +236,76 @@ footer {
 .socials-icon {
   width: 40px;
   height: 40px;
+}
+
+@media (min-width: 768px) {
+   header nav ul {
+       display: flex;
+       gap: 24px;
+       margin-right: 16px;
+   }
+
+   header .mobile-header .hamburger-icon {
+       display: none;
+   }
+
+   .logo {
+     height: 100px;
+   }
+
+  header .mobile-header .desktop-nav {
+     display: inline-block;
+   }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .hero {
+    display:flex;
+    gap: 32px;
+    padding: 32px 32px;
+  }
+
+   .hero h1 {
+     font-size: 3.5rem;
+     max-width: 70%;
+   }
+
+   .hero .desktop-hero {
+    width: 25%;
+   }
+
+   .hero .desktop-hero-text{
+     display:block;
+     width: 75%;
+   }
+
+   .articles-container {
+     display: flex;
+   }
+
+  .articles-container article {
+      padding: 16px;
+      flex: 1 1 0;
+  }
+
+  .contact-form h2 {
+      text-align: center;
+      font-size: 2.5rem;
+  }
+
+  .contact-form form {
+      max-width: 60%;
+      margin: 40px auto;
+  }
+
+  footer {
+       justify-content: center;
+   }
+
+   footer .socials-icon {
+       margin-left: 20px;
+       margin-right: 20px;
+   }
 }

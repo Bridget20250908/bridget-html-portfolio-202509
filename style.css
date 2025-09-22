@@ -2,12 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap");
 
 :root {
-  --brand: #232124;
+  --brand: #4a4a48;
   --action: hsl(285, 8%, 62%);
   --white: #ffffff;
-  --base-light: #151414;
+  --base-light: #aba5a5;
   --base-dark: #0d0711;
   --black: #111111;
+  --crystal: #414343;
 }
 
 /* CSS Reset */
@@ -67,13 +68,13 @@ select {
 }
  /* Utilities */
  
- .display-none {
+.display-none {
    display: none;
- }
+}
   /* Components */
 
  /* btn-primary */
- .btn-primary {
+.btn-primary {
    padding: 12px 16px;
    display: inline-block;
    text-decoration: none;
@@ -81,160 +82,117 @@ select {
    border-radius: 4px;
    background-color: var(--action);
    transition: all 0.3s ease;
- }
+}
  
- .btn-primary:hover {
+.btn-primary:hover {
    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
    transform: translateY(-4px);
- }
+}
   /* header */
- header .mobile-header {
+header .mobile-header {
   padding: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-   
 
-
- header button {
+header button {
    all: unset;
- }
- 
-  @media (min-width: 768px) {
-   header {
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-   }
+}
 
-   header nav ul {
-       display: flex;
-       gap: 24px;
-       margin-right: 16px;
-   }
-
-   header .mobile-header .hamburger-icon {
-       display: none;
-   }
- }
- /* .logo */
- .logo {
+.logo {
    height: 50px;
- }
-  /* .logo media query  */
+}
 
- @media (min-width: 768px) {
-   .logo {
-       height: 100px;
-   }
- }
- * .mobile-nav */
- .mobile-nav a {
-   text-decoration: none;
-   color: var(--black);
-   display: block;
+.desktop-nav a {
+  text-decoration: none;
+  font-size: larger;
+  color: var(--black);
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  color: var(--black);
+  display: block;
   padding: 4px 16px;
- }
+}
  
- /* .desktop-nav */
- .desktop-nav {
+.desktop-nav {
    display: none;
- }
- 
-  @media (min-width: 768px) {
-   .desktop-nav a {
-       text-decoration: none;
-       font-size: larger;
-       color: var(--black);
-   }
-  .desktop-nav {
-       display: inline-block;
-   }
- }
+}
 
+.mobile-nav {
+   display: none;
+}
 
- /* .hamburger-icon  */
- .hamburger-icon {
+.hamburger-icon {
    height: 50px;
- }
+}
 
-
-  /* .hero */
- .hero {
-   background-color: var(--brand);
-   padding: 56px 16px;
-   border-radius: 10px;
-   margin: 5px 10px;
- }
+.hero {
+  background-color: var(--brand);
+  padding: 16px 16px;
+  border-radius: 12px;
+  margin: 16px 16px;
+}
  
- .hero h1 {
-   font-size: 2rem;
-   margin-bottom: 24px;
-   color: var(--white);
- }
- 
- .hero .hero-accent {
-   color: var(--action);
- }
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+    color: var(--base-light);
+}
 
-@media (min-width: 768px) {
-   .hero {
-       padding: 120px 56px;
-   }
- 
-   .hero h1 {
-       font-size: 3.5rem;
-       max-width: 70%;
-   }
- }
+.hero p {
+    font-size: 32px;
+    margin-bottom: 24px;
+    color: var(--base-light);
+}
 
-  /* .articles-container */
+.hero .hero-accent {
+    color: var(--action);
+}
 
- /* .articles-container  */
- @media (min-width: 768px) {
-   .articles-container {
-     display: flex;
-   }
- }
- article {
-   padding: 32px 16px;
+.hero .desktop-hero-text{
+    display:none;
+}
+
+article {
+   padding: 16px 16px;
+   margin: 16px;
    background-color: var(--base-light);
-   border-radius: 10px;
-   margin: 5px 10px;
+   border-radius: 12px;
    transition: all 0.3s ease;
  }
- 
- @media (min-width: 768px) {
-   article {
-      padding: 56px;
-  }
-}
- article:hover {
-   filter: contrast(150%);
- }
 
-  article .article-heading {
+article:hover {
+   filter: contrast(150%);
+}
+
+article .article-heading {
   display: flex;
   justify-content: flex-start;
 }
- 
 
- article .icon {
-   height: 24px;
-   width: 24px;
+article .icon {
+   height: 96px;
    margin-left: 10px;
    margin-right: 10px;
  }
  
- article .article-heading h2 {
+article .article-heading h2 {
    margin-bottom: 16px;
    color: var(--base-dark);
  }
  
- article p {
+article p {
    margin-bottom: 16px;
- }
+}
+
+article a {
+  text-decoration: none;
+  color: var(--black);
+  display: block;
+}
 
  /* .contact-form */
 .contact-form {
@@ -243,7 +201,6 @@ select {
   margin: 5px 10px;
 }
 
- 
 .contact-form input,
 .contact-form select {
   display: block;
@@ -256,17 +213,6 @@ select {
   display: block;
   width: 100%;
   padding: 8px;
-}
-@media (min-width: 768px) {
-  .contact-form h2 {
-      text-align: center;
-      font-size: 2.5rem;
-  }
-
-  .contact-form form {
-      max-width: 60%;
-      margin: 40px auto;
-  }
 }
 
 .contact-form label {
@@ -299,12 +245,72 @@ footer {
 }
 
 @media (min-width: 768px) {
-   footer {
+   header nav ul {
+       display: flex;
+       gap: 24px;
+       margin-right: 16px;
+   }
+
+   header .mobile-header .hamburger-icon {
+       display: none;
+   }
+
+   .logo {
+     height: 100px;
+   }
+
+  header .mobile-header .desktop-nav {
+     display: inline-block;
+   }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .hero {
+    display:flex;
+    gap: 32px;
+    padding: 16px 16px;
+  }
+
+   .hero h1 {
+     font-size: 3.5rem;
+     max-width: 70%;
+   }
+
+   .hero .desktop-hero {
+    width: 25%;
+   }
+
+   .hero .desktop-hero-text{
+     display:block;
+     width: 75%;
+   }
+
+   .articles-container {
+     display: flex;
+     gap:16px;
+     padding:0px 16px;
+   }
+
+  .articles-container article {
+      padding: 16px;
+      margin:0px 0px;
+      flex: 1 1 0;
+  }
+
+  .contact-form h2 {
+      text-align: center;
+      font-size: 2.5rem;
+  }
+
+  .contact-form form {
+      max-width: 60%;
+      margin: 40px auto;
+  }
+
+  footer {
        justify-content: center;
+       gap:32px;
    }
- 
-   footer .socials-icon {
-       margin-left: 20px;
-       margin-right: 20px;
-   }
- }
+}

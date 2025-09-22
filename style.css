@@ -131,9 +131,9 @@ header button {
 
 .hero {
   background-color: var(--brand);
-  padding: 32px 32px;
-  border-radius: 10px;
-  margin: 5px 10px;
+  padding: 16px 16px;
+  border-radius: 12px;
+  margin: 16px 16px;
 }
  
 .hero h1 {
@@ -158,9 +158,9 @@ header button {
 
 article {
    padding: 16px 16px;
+   margin: 16px;
    background-color: var(--base-light);
-   border-radius: 10px;
-   margin: 5px 10px;
+   border-radius: 12px;
    transition: all 0.3s ease;
  }
 
@@ -186,6 +186,12 @@ article .article-heading h2 {
  
 article p {
    margin-bottom: 16px;
+}
+
+article a {
+  text-decoration: none;
+  color: var(--black);
+  display: block;
 }
 
  /* .contact-form */
@@ -264,7 +270,7 @@ footer {
   .hero {
     display:flex;
     gap: 32px;
-    padding: 32px 32px;
+    padding: 16px 16px;
   }
 
    .hero h1 {
@@ -283,10 +289,13 @@ footer {
 
    .articles-container {
      display: flex;
+     gap:16px;
+     padding:0px 16px;
    }
 
   .articles-container article {
       padding: 16px;
+      margin:0px 0px;
       flex: 1 1 0;
   }
 

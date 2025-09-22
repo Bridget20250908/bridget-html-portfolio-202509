@@ -194,6 +194,10 @@ article a {
   display: block;
 }
 
+div.article-title {
+  display: flex;
+}
+
  /* .contact-form */
 .contact-form {
   padding: 48px 16px;

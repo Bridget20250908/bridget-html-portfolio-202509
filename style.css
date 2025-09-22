@@ -2,13 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap");
 
 :root {
-  --brand: #37303a;
+  --brand: #4a4a48;
   --action: hsl(285, 8%, 62%);
   --white: #ffffff;
   --base-light: #aba5a5;
   --base-dark: #0d0711;
   --black: #111111;
-  --crystal: #93eed1;
+  --crystal: #414343;
 }
 
 /* CSS Reset */
@@ -143,7 +143,7 @@ header button {
 }
 
 .hero p {
-    font-size: 50px;
+    font-size: 32px;
     margin-bottom: 24px;
     color: var(--base-light);
 }

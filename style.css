@@ -96,6 +96,7 @@ header .mobile-header {
   justify-content: space-between;
 }
 
+
 header button {
    all: unset;
 }
@@ -318,3 +319,4 @@ footer {
        gap:32px;
    }
 }
+/* border radius = 50% - need a circle  */ 

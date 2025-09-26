@@ -2,7 +2,7 @@
 # My Journey: Bridget's Homepage
 #### Project assignment for HTML/CSS lesson Shecodes 2025
 ![expertise2.svg](img/expertise2.svg)
-## Content
+## ![content.png](img/content.png) Content
 * My Bio
 * My contact details
 * My
@@ -10,7 +10,7 @@
   * Hobbies
     * Paintings 
   * Expertise
-## Techniques
+## ![technique.png](img/technique.png) Techniques
 * Git and GitHub
 * HTML structure and tags
 * CSS selectors and properties

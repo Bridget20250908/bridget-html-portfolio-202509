@@ -1,15 +1,18 @@
 [My Journey: Bridget's Homepage](https://bridget20250908.github.io/bridget-html-portfolio-202509/)
 # My Journey: Bridget's Homepage
-#### Project assignment for HTML/CSS lesson Shecodes 2025
-![expertise2.svg](img/expertise2.svg)
+> #### Project assignment for HTML/CSS lesson Shecodes 2025
+> ![shecodes1.svg](img/shecodes1.svg)
 ## ![content.png](img/content.png) Content
-* My Bio
-* My contact details
-* My
-  * Projects
-  * Hobbies
-    * Paintings 
-  * Expertise
+* Bio
+* Contact details
+* Projects
+* Hobbies
+  * Paintings 
+* Expertise
+* Social media links
+  * LinkedIn
+  * TikTok
+  * Instagram
 ## ![technique.png](img/technique.png) Techniques
 * Git and GitHub
 * HTML structure and tags

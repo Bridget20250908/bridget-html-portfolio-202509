@@ -50,6 +50,49 @@ height: 36px; width: 160px
        margin-right: 16px;
    }
 
+   /* articles */
+   article {
+   padding: 16px 16px;
+   margin: 16px;
+   border-radius: 12px;
+   transition: all 0.3s ease;
+ }
+
+article:hover {
+   filter: contrast(150%);
+}
+
+article .article-heading {
+  display: flex;
+  justify-content: flex-start;
+}
+
+article .icon {
+   height: 96px;
+   margin-left: 10px;
+   margin-right: 10px;
+ }
+ 
+article .article-heading h2 {
+   margin-bottom: 16px;
+   color: var(--base-dark);
+ }
+ 
+article p {
+   margin-bottom: 16px;
+}
+
+article a {
+  color: var(--black);
+}
+
+div.article-title {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+
 
 
 
